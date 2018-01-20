@@ -1,0 +1,18 @@
+﻿@model M183_Blog.ViewModels.HomeViewModel
+
+    <main>
+        <h1>Public Posts</h1>
+        @foreach (var post in Model.Posts)
+        {
+        <article>
+            <h2>@post.Title</h2>
+            <h3>@post.Description</h3>
+            <p>@post.Content</p>
+            @Html.ActionLink("Details", "Index", "DetailedPost", new { postId = @post.Id }, null)
+            <footer>
+                <p>Written on <time>@post.CreatedOn</time> from @post.User.Username</p>
+            </footer>
+        </article>
+        <hr />
+        }
+    </main>
