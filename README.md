@@ -7,4 +7,4 @@ Copy from Google Drive `Materialien2/Ressourcen_Project` the files `m183_project
 
 ## Seed
 
-Press F5 and goto `/Home/Seed`
+goto `/Home/Seed`
